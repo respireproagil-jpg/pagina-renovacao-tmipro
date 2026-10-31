@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Renovação TMIPRO | RespirePRO</title>
+<meta name="description" content="Renovação exclusiva para ex-alunos do TMIPRO. Volte a ter acesso ao curso por mais 6 meses ou mais 1 ano.">
+<style>
+  :root{
+    --bg:#443A69; --card:#F7F7F7; --ink:#443A69; --muted:#616194;
+    --accent:#FFCF70; --accent-dark:#443A69; --line:#D9D9E8; --soft:#ECECF5;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--card); line-height:1.55}
+  .wrap{max-width:980px; margin:0 auto; padding:0 20px}
+  section{padding:56px 0}
+  h1,h2,h3{line-height:1.2; margin:0}
+  h2{font-size:28px; margin-bottom:10px}
+  .lead{color:var(--muted); font-size:17px; margin:0 0 28px}
+  .tag{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-dark); background:var(--accent); padding:6px 12px; border-radius:999px}
+  .btn{display:inline-block; text-align:center; font-weight:700; font-size:17px; padding:16px 28px; border-radius:12px; background:var(--accent); color:var(--accent-dark); text-decoration:none; border:0; cursor:pointer; transition:background .15s, transform .05s}
+  .btn:hover{background:#F2BD4F}
+  .btn:active{transform:scale(.99)}
+  .btn.off{opacity:.55; pointer-events:none}
+
+  .topbar{background:#fff; border-bottom:1px solid var(--line); padding:8px 0}
+  .topbar img{height:52px; width:auto; display:block}
+
+  .hero{background:radial-gradient(1200px 600px at 50% -20%, #616194 0%, var(--bg) 65%); color:#fff; padding:56px 0 64px}
+  .hero h1{font-size:clamp(32px,5.4vw,50px); margin:18px 0 10px}
+  .hero p{font-size:18px; color:#E7E6F2; max-width:680px; margin:0 0 22px}
+  .hero .sub{font-size:20px; font-weight:600; color:var(--accent); margin:0 0 14px}
+  .hero .wrap{display:grid; grid-template-columns:1.2fr .8fr; gap:36px; align-items:center}
+  .hero-img img{width:100%; height:auto; display:block; border-radius:22px; box-shadow:0 20px 50px rgba(0,0,0,.35)}
+  .count{display:flex; gap:12px; margin:26px 0 4px; flex-wrap:wrap}
+  .count div{background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:12px; padding:12px 16px; min-width:74px; text-align:center}
+  .count b{display:block; font-size:28px; line-height:1}
+  .count span{font-size:12px; color:#D8D6EA; text-transform:uppercase; letter-spacing:.06em}
+  .count-note{font-size:14px; color:#D8D6EA; margin:8px 0 0}
+
+  .grid{display:grid; gap:16px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .box{background:#fff; border:1.5px solid var(--line); border-radius:16px; padding:22px}
+  .box h3{font-size:18px; margin-bottom:6px}
+  .box p{margin:0; color:var(--muted); font-size:15px}
+  .soft{background:var(--soft)}
+
+  .plan{background:#fff; border:2px solid var(--line); border-radius:18px; padding:26px; display:flex; flex-direction:column; position:relative}
+  .plan.best{border-color:var(--accent); box-shadow:0 14px 40px rgba(68,58,105,.18)}
+  .plan .ribbon{position:absolute; top:-13px; left:22px; background:var(--accent); color:var(--accent-dark); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; padding:5px 12px; border-radius:999px}
+  .plan h3{font-size:20px}
+  .price{font-size:40px; font-weight:800; margin:12px 0 4px}
+  .plan small{color:var(--muted)}
+  .plan ul{list-style:none; padding:0; margin:16px 0 24px; flex:1}
+  .plan li{padding:7px 0 7px 28px; position:relative; font-size:15px; border-bottom:1px solid var(--soft)}
+  .plan li::before{content:"✓"; position:absolute; left:0; font-weight:800; color:var(--muted)}
+  .plan .btn{width:100%}
+  .fine{font-size:13px; color:var(--muted); text-align:center; margin-top:18px}
+
+  .closed{display:none; background:#fff; border:2px solid var(--line); border-radius:18px; padding:30px; text-align:center; max-width:620px; margin:0 auto}
+  .closed h3{font-size:22px; margin-bottom:8px}
+  .closed p{color:var(--muted); margin:0 0 20px}
+
+  details{background:#fff; border:1.5px solid var(--line); border-radius:12px; padding:16px 18px; margin-bottom:10px}
+  summary{cursor:pointer; font-weight:700; list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+"; float:right; font-size:20px; color:var(--muted)}
+  details[open] summary::after{content:"–"}
+  details p{margin:10px 0 0; color:var(--muted); font-size:15px}
+
+  footer{background:var(--bg); color:#D8D6EA; padding:36px 0; font-size:14px; text-align:center}
+  footer b{color:var(--accent)}
+
+  .sticky{display:none}
+  @media(max-width:760px){
+    section{padding:40px 0}
+    .g2,.g3{grid-template-columns:1fr}
+    .hero .wrap{grid-template-columns:1fr}
+    .hero-img{max-width:380px}
+    .topbar img{height:44px}
+    h2{font-size:24px}
+    .sticky{display:block; position:fixed; left:0; right:0; bottom:0; background:var(--bg); padding:10px 16px; z-index:20; box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+    .sticky .btn{width:100%; padding:14px}
+    footer{padding-bottom:90px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap"><img src="logo-respirepro.png" alt="RespirePRO, Raciocínio Ágil" width="209" height="170"></div></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="tag">Renovação exclusiva · Ex-alunos TMIPRO</span>
+      <h1>Seu acesso ao TMIPRO terminou? Renove e continue evoluindo.</h1>
+      <p class="sub">Volte a ter acesso ao curso por mais 6 meses ou mais 1 ano</p>
+      <p>Esta condição é só para quem já foi aluno e está dentro do prazo de renovação.</p>
+      <a class="btn" href="#renovar" id="hero-btn">Quero renovar meu acesso</a>
+
+      <div class="count" id="count" aria-live="polite" style="display:none">
+        <div><b id="d">--</b><span>dias</span></div>
+        <div><b id="h">--</b><span>horas</span></div>
+        <div><b id="m">--</b><span>min</span></div>
+        <div><b id="s">--</b><span>seg</span></div>
+      </div>
+      <p class="count-note" id="count-note"></p>
+    </div>
+    <div class="hero-img"><img src="foto-ana-chris.jpg" alt="Profa. Ana e Profa. Chris, da RespirePRO" width="600" height="699"></div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>O que você retoma com a renovação</h2>
+    <p class="lead">Tudo o que o TMIPRO oferece, de volta à sua disposição.</p>
+    <div class="grid g3">
+      <div class="box"><h3>Mais de 90 aulas</h3><p>10 módulos, com mais de 30 horas de aulas em vídeo, e novas aulas todo mês.</p></div>
+      <div class="box"><h3>Biblioteca científica</h3><p>Atualizada constantemente, para embasar seus atendimentos com referências atuais.</p></div>
+      <div class="box"><h3>Materiais de consultório</h3><p>Toolkit, materiais para o consultório e como fazer assessoria de TMI.</p></div>
+      <div class="box"><h3>Encontros ao vivo gravados</h3><p>TMIPRO em Ação, Café com Ciência e os encontros ao vivo.</p></div>
+      <div class="box"><h3>Grupo de WhatsApp</h3><p>O grupo dos alunos do TMIPRO, para trocar com a turma e com as professoras.</p></div>
+      <div class="box"><h3>Novidades em 2027</h3><p>Novos módulos previstos: TMI em neurofuncional, TMI em pediatria e outros.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="renovar">
+  <div class="wrap">
+    <h2>Escolha o tempo da sua renovação</h2>
+    <p class="lead" id="plans-lead">Pagamento seguro pela Kiwify, com cartão ou pix.</p>
+
+    <div class="grid g2" id="plans">
+      <div class="plan">
+        <h3>Renovação de 6 meses</h3>
+        <div class="price">R$ 297,00</div>
+        <small>pagamento único · equivale a R$ 49,50 por mês</small>
+        <ul>
+          <li>Mais 6 meses de acesso ao TMIPRO</li>
+          <li>Todas as aulas, materiais e a biblioteca científica</li>
+          <li>Novas aulas que forem sendo liberadas</li>
+        </ul>
+        <a class="btn" data-plan="seis" href="#renovar">Renovar por 6 meses</a>
+      </div>
+
+      <div class="plan best">
+        <span class="ribbon">Melhor custo-benefício</span>
+        <h3>Renovação de 1 ano</h3>
+        <div class="price">R$ 497,00</div>
+        <small>pagamento único · equivale a R$ 41,42 por mês</small>
+        <ul>
+          <li>Mais 1 ano de acesso ao TMIPRO</li>
+          <li>Todas as aulas, materiais e a biblioteca científica</li>
+          <li>Novas aulas e os módulos previstos para 2027</li>
+        </ul>
+        <a class="btn" data-plan="ano" href="#renovar">Renovar por 1 ano</a>
+      </div>
+    </div>
+
+    <div class="closed" id="closed">
+      <h3>O prazo de renovação encerrou</h3>
+      <p>Esta condição vale por até 7 dias após o fim do acesso. Fale com a nossa equipe para ver como voltar ao TMIPRO.</p>
+      <a class="btn" href="https://wa.me/5542999647090?text=Ol%C3%A1!%20Meu%20prazo%20de%20renova%C3%A7%C3%A3o%20do%20TMIPRO%20encerrou%20e%20gostaria%20de%20ajuda." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+
+    <p class="fine" id="fine">Renovação válida por até 7 dias após o fim do seu acesso.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:760px">
+    <h2>Perguntas frequentes</h2>
+    <p class="lead">Ainda com dúvida? Veja abaixo.</p>
+
+    <details><summary>Até quando posso renovar?</summary>
+      <p>Por até 7 dias após o fim do seu acesso. A contagem regressiva no topo da página mostra o seu prazo.</p></details>
+    <details><summary>Qual a diferença entre as duas renovações?</summary>
+      <p>O conteúdo é o mesmo. A diferença é o tempo de acesso: 6 meses ou 1 ano. A renovação de 1 ano tem o melhor valor por mês.</p></details>
+    <details><summary>Como funciona o pagamento?</summary>
+      <p>O pagamento é feito pela Kiwify, com cartão ou pix, em um ambiente seguro.</p></details>
+    <details><summary>O que acontece depois do prazo?</summary>
+      <p>Depois do prazo, esta condição de renovação deixa de valer. Fale com o nosso suporte para ver as opções de volta ao TMIPRO.</p></details>
+    <details><summary>Como falo com a equipe?</summary>
+      <p>Fale com o nosso suporte pelo WhatsApp <a href="https://wa.me/5542999647090" target="_blank" rel="noopener">(42) 99964-7090</a> ou escreva para <a href="mailto:respireproagil@gmail.com">respireproagil@gmail.com</a>.</p></details>
+
+    <p style="text-align:center; margin-top:34px"><a class="btn" href="#renovar" id="faq-btn">Quero renovar meu acesso</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>RespirePRO</b> · Fisioterapia baseada em evidência, de forma descomplicada.<br>
+    Conteúdo educacional voltado a profissionais da saúde.
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn" href="#renovar" id="sticky-btn">Quero renovar meu acesso</a></div>
+
+<script>
+// ============ CONFIGURAÇÃO ============
+const LINKS = {
+  seis: "https://pay.kiwify.com.br/0XXjK3Q",   // renovação 6 meses
+  ano:  "https://pay.kiwify.com.br/XMAX9vc"    // renovação 1 ano
+};
+const DIAS_DE_PRAZO = 7;
+// Como usar: envie o link com a data limite de cada aluno, no formato AAAA-MM-DD.
+// Exemplo: https://SEU-SITE.vercel.app/?ate=2026-11-07
+// Sem a data no link, a contagem de 7 dias começa na primeira vez que o aluno abre a página.
+// ======================================
+
+(function(){
+  const $ = id => document.getElementById(id);
+  const pad = n => String(n).padStart(2,'0');
+
+  // 1) descobrir o prazo
+  let fim = null, fonte = "";
+  const ate = new URLSearchParams(location.search).get("ate");
+  if (ate && /^\d{4}-\d{2}-\d{2}$/.test(ate)) {
+    const d = new Date(ate + "T23:59:59-03:00");
+    if (!isNaN(d)) { fim = d; fonte = "data"; }
+  }
+  if (!fim) {
+    try {
+      const k = "tmipro_renovacao_inicio";
+      let ini = parseInt(localStorage.getItem(k), 10);
+      if (!ini) { ini = Date.now(); localStorage.setItem(k, String(ini)); }
+      fim = new Date(ini + DIAS_DE_PRAZO * 86400000); fonte = "abertura";
+    } catch(e){}
+  }
+
+  // 2) botões de compra
+  document.querySelectorAll('[data-plan]').forEach(a => {
+    const link = LINKS[a.dataset.plan];
+    if (/^https?:\/\//.test(link)) { a.href = link; a.target = "_blank"; a.rel = "noopener"; }
+    else { a.textContent = "Em breve"; a.classList.add("off"); }
+  });
+
+  if (!fim) return; // sem prazo calculável: página fica aberta, sem contagem
+
+  const quando = fim.toLocaleDateString("pt-BR", {timeZone:"America/Sao_Paulo"}) + " às " +
+                 fim.toLocaleTimeString("pt-BR", {timeZone:"America/Sao_Paulo", hour:"2-digit", minute:"2-digit"});
+  $('count').style.display = 'flex';
+  $('count-note').textContent = 'A renovação vale até ' + quando + ' (horário de Brasília).';
+  $('fine').textContent = 'Renovação válida até ' + quando + ' (horário de Brasília).';
+
+  function encerrar(){
+    $('count').style.display = 'none';
+    $('count-note').textContent = 'Prazo de renovação encerrado.';
+    $('plans').style.display = 'none';
+    $('plans-lead').style.display = 'none';
+    $('fine').style.display = 'none';
+    $('closed').style.display = 'block';
+    $('sticky').style.display = 'none';
+    ['hero-btn','faq-btn'].forEach(id => { const b=$(id); b.classList.add('off'); b.textContent='Prazo encerrado'; });
+  }
+
+  function tick(){
+    const diff = fim - new Date();
+    if (diff <= 0) { encerrar(); return; }
+    const s = Math.floor(diff/1000);
+    $('d').textContent = pad(Math.floor(s/86400));
+    $('h').textContent = pad(Math.floor(s%86400/3600));
+    $('m').textContent = pad(Math.floor(s%3600/60));
+    $('s').textContent = pad(s%60);
+    setTimeout(tick, 1000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>
