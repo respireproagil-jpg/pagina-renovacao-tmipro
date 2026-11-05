@@ -60,6 +60,21 @@
   .plan .btn{width:100%}
   .fine{font-size:13px; color:var(--muted); text-align:center; margin-top:18px}
 
+  .combo{margin-top:30px; background:radial-gradient(900px 400px at 85% 0%, #616194 0%, var(--bg) 70%); color:#fff; border:2px solid var(--accent); border-radius:20px; padding:30px; position:relative; display:grid; grid-template-columns:1.25fr .75fr; gap:30px; align-items:center; box-shadow:0 18px 46px rgba(68,58,105,.28)}
+  .combo .ribbon{position:absolute; top:-13px; left:24px; background:var(--accent); color:var(--accent-dark); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; padding:5px 12px; border-radius:999px}
+  .combo h3{font-size:24px; margin-bottom:8px}
+  .combo .plus{color:var(--accent)}
+  .combo p{margin:0 0 14px; color:#E7E6F2; font-size:16px}
+  .combo ul{list-style:none; padding:0; margin:0}
+  .combo li{padding:6px 0 6px 28px; position:relative; font-size:15px; color:#F1F0F8}
+  .combo li::before{content:"✓"; position:absolute; left:0; font-weight:800; color:var(--accent)}
+  .combo-price{background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:16px; padding:22px; text-align:center}
+  .combo-price .de{font-size:15px; color:#D8D6EA}
+  .combo-price .price{color:#fff; margin:6px 0 2px}
+  .combo-price small{display:block; color:#D8D6EA; margin-bottom:6px}
+  .combo-price .extra{display:inline-block; font-size:14px; font-weight:700; color:var(--accent-dark); background:var(--accent); border-radius:999px; padding:4px 12px; margin:6px 0 16px}
+  .combo-price .btn{width:100%}
+
   .closed{display:none; background:#fff; border:2px solid var(--line); border-radius:18px; padding:30px; text-align:center; max-width:620px; margin:0 auto}
   .closed h3{font-size:22px; margin-bottom:8px}
   .closed p{color:var(--muted); margin:0 0 20px}
@@ -78,6 +93,8 @@
   @media(max-width:760px){
     section{padding:40px 0}
     .g2,.g3{grid-template-columns:1fr}
+    .combo{grid-template-columns:1fr; padding:30px 20px 22px; gap:22px}
+    .combo h3{font-size:21px}
     .hero .wrap{grid-template-columns:1fr}
     .hero-img{max-width:380px}
     .topbar img{height:44px}
@@ -98,7 +115,7 @@
       <span class="tag">Renovação exclusiva · Ex-alunos TMIPRO</span>
       <h1>Seu acesso ao TMIPRO terminou? Renove e continue evoluindo.</h1>
       <p class="sub">Volte a ter acesso ao curso por mais 6 meses ou mais 1 ano</p>
-      <p>Esta condição é só para quem já foi aluno e está dentro do prazo de renovação.</p>
+      <p>Na renovação de 1 ano, você pode levar também o AtualizaPRO por só +R$ 100. Esta condição é só para quem já foi aluno e está dentro do prazo de renovação.</p>
       <a class="btn" href="#renovar" id="hero-btn">Quero renovar meu acesso</a>
 
       <div class="count" id="count" aria-live="polite" style="display:none">
@@ -160,6 +177,28 @@
       </div>
     </div>
 
+    <div class="combo" id="combo">
+      <span class="ribbon">Combo exclusivo para quem renova</span>
+      <div>
+        <h3>TMIPRO <span class="plus">+</span> AtualizaPRO por 1 ano</h3>
+        <p>Renove o TMIPRO e leve também o AtualizaPRO, a nossa plataforma de atualização em fisioterapia respiratória e reabilitação pulmonar.</p>
+        <ul>
+          <li>Mais 1 ano de acesso ao TMIPRO, com os módulos previstos para 2027</li>
+          <li>1 ano de AtualizaPRO: mais de 40 aulas curtas e novas aulas a cada 15 dias</li>
+          <li>Aulas ao vivo, Atualiza Entrevista e biblioteca de artigos científicos</li>
+          <li>Fichas de avaliação e modelos de relatório para o seu consultório</li>
+          <li>Grupos de WhatsApp dos dois produtos</li>
+        </ul>
+      </div>
+      <div class="combo-price">
+        <div class="de">Renovação do TMIPRO: R$ 497,00</div>
+        <div class="price">R$ 597,00</div>
+        <small>pagamento único · equivale a R$ 49,75 por mês</small>
+        <span class="extra">AtualizaPRO por só +R$ 100</span>
+        <a class="btn" data-plan="combo" href="#renovar">Quero o combo</a>
+      </div>
+    </div>
+
     <div class="closed" id="closed">
       <h3>O prazo de renovação encerrou</h3>
       <p>Esta condição vale por até 7 dias após o fim do acesso. Fale com a nossa equipe para ver como voltar ao TMIPRO.</p>
@@ -179,6 +218,10 @@
       <p>Por até 7 dias após o fim do seu acesso. A contagem regressiva no topo da página mostra o seu prazo.</p></details>
     <details><summary>Qual a diferença entre as duas renovações?</summary>
       <p>O conteúdo é o mesmo. A diferença é o tempo de acesso: 6 meses ou 1 ano. A renovação de 1 ano tem o melhor valor por mês.</p></details>
+    <details><summary>Como funciona o combo TMIPRO + AtualizaPRO?</summary>
+      <p>Por R$ 597,00 você renova o TMIPRO por 1 ano e ganha também 1 ano de AtualizaPRO. É só R$ 100 a mais que a renovação do TMIPRO sozinha. Vale tanto para quem ainda não tem o AtualizaPRO quanto para quem já é aluno e quer renovar os dois juntos.</p></details>
+    <details><summary>O que é o AtualizaPRO?</summary>
+      <p>É a nossa plataforma de atualização em fisioterapia respiratória e reabilitação pulmonar. Não é um curso com começo e fim: são aulas curtas e independentes, com novidades a cada 15 dias, aulas ao vivo, entrevistas, biblioteca de artigos e materiais de avaliação.</p></details>
     <details><summary>Como funciona o pagamento?</summary>
       <p>O pagamento é feito pela Kiwify, com cartão ou pix, em um ambiente seguro.</p></details>
     <details><summary>O que acontece depois do prazo?</summary>
@@ -203,7 +246,8 @@
 // ============ CONFIGURAÇÃO ============
 const LINKS = {
   seis: "https://pay.kiwify.com.br/0XXjK3Q",   // renovação 6 meses
-  ano:  "https://pay.kiwify.com.br/XMAX9vc"    // renovação 1 ano
+  ano:  "https://pay.kiwify.com.br/XMAX9vc",   // renovação 1 ano
+  combo: "https://pay.kiwify.com.br/rAFL7zs"   // combo TMIPRO + AtualizaPRO 1 ano (R$ 597). Vazio = botão "Em breve"
 };
 const DIAS_DE_PRAZO = 7;
 // Como usar: envie o link com a data limite de cada aluno, no formato AAAA-MM-DD.
@@ -250,6 +294,7 @@ const DIAS_DE_PRAZO = 7;
     $('count').style.display = 'none';
     $('count-note').textContent = 'Prazo de renovação encerrado.';
     $('plans').style.display = 'none';
+    $('combo').style.display = 'none';
     $('plans-lead').style.display = 'none';
     $('fine').style.display = 'none';
     $('closed').style.display = 'block';
